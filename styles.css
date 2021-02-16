@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#title{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 30vh 0 30vh;
+}
+
+#page{
+    display: flex;
+    height: 650px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#option{
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30%;
+}
+
+#option button{
+    border: 3px solid black;
+    width: 80px;
+    height: 80px;
+    margin: 15px 0;
+}
+
+#theGrid{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#rowNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 38%;
+    margin-top: 50px;
+}
+
+#rowNumber div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66.4px;
+    height: 66.4px;
+    font-size: 2em;
+}
+
+#columnNumber{
+    margin-left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#columnNumber div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66.4px;
+    height: 66.4px;
+    font-size: 2em;
+}
+
+#grid{
+    width : 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.gridRows{
+    width: 100%;
+    height: 16.6%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.cell {
+    width: 16.6%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background-color: white;
+}
+
+#redo, #music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+    background-color: cadetblue;
+}
+
+.tree{
+    color: white;
+    background-color: green;
+}
+
+.tent{
+    font-size: 2.5em;
+    color: orange;
+    background-color: green;
+}
+
+.grass{
+    background-color: green;
+}
+
+i{
+    pointer-events: none;
+}
+
+
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tents & Trees !</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script type="module" src="./game.js" ></script>
+</head>
+<body>
+    <div id="title">
+        <h1 id="tents">Tents</h1>
+        <h1 id="and">&</h1>
+        <h1 id="trees">Trees</h1>
+    </div>
+    <div id="page">
+        <section id="theGrid">
+            <div id="rowNumber">
+                <div id="rowNumber_1">2</div>
+                <div id="rowNumber_2">0</div>
+                <div id="rowNumber_3">1</div>
+                <div id="rowNumber_4">1</div>
+                <div id="rowNumber_5">1</div>
+                <div id="rowNumber_6">2</div>
+            </div>
+            <div id="columnNumber">
+                <div id="columnNumber_1">1</div>
+                <div id="columnNumber_2">0</div>
+                <div id="columnNumber_3">3</div>
+                <div id="columnNumber_4">0</div>
+                <div id="columnNumber_5">1</div>
+                <div id="columnNumber_6">2</div>
+            </div>
+            <div id="grid">
+                <div class="gridRows">
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell tree"><i class="fas fa-tree"></i></button>
+                    <button class="cell trueTent"></button>
+                    <button class="cell"></button>
+                </div>
+                <div class="gridRows">
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                </div>
+                <div class="gridRows">
+                    <button class="cell trueTent"></button>
+                    <button class="cell tree"><i class="fas fa-tree"></i></button>
+                    <button class="cell trueTent"></button>
+                    <button class="cell tree"><i class="fas fa-tree"></i></button>
+                    <button class="cell"></button>
+                    <button class="cell trueTent"></button>
+                </div>
+                <div class="gridRows">
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell tree"><i class="fas fa-tree"></i></button>
+                </div>
+                <div class="gridRows">
+                    <button class="cell trueTent"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                    <button class="cell"></button>
+                </div>
+                <div class="gridRows">
+                    <button class="cell tree"><i class="fas fa-tree"></i></button>
+                    <button class="cell"></button>
+                    <button class="cell tree"><i class="fas fa-tree"></i></button>
+                    <button class="cell trueTent"></button>
+                    <button class="cell tree"><i class="fas fa-tree"></i></button>
+                    <button class="cell trueTent"></button>
+                </div>
+            </div>
+        </section>
+        <section id="option">
+            <button id="redo"><i class="fas fa-redo"></i></button>
+            <button id="music"><i class="fas fa-volume-up"></i></button>
+        </section>
+    </div>
+</body>
+</html>
