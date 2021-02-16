@@ -6,50 +6,88 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 }
 
 #title{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 30px 30vh 0 30vh;
+    padding: 5vh 30vh 5vh 30vh;
+    background-color: forestgreen;
+    color: white;
+    width: 100%;
+}
+
+h1{
+    margin: 0 20px;
 }
 
 #page{
     display: flex;
-    height: 650px;
+    height: 500px;
     justify-content: space-around;
     align-items: center;
 }
 
 #option{
-    width: 30%;
+    width: 40%;
     height: 75%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-right: 30%;
+    align-content: flex-start;
+    margin-top: 8%;
 }
 
-#option button{
+#option p{
+    height: 100%;
+    width: 57%;
+    margin: 5% 0 0 5%;
+    background-color: rgb(255, 165, 0, 0.1);
+    color: black;
+    padding: 15px;
+    border: 3px solid black;
+    font-size: 1.2em;
+    text-align: justify;
+    text-justify:inter-word;
+}
+
+#option button, #endPage button{
     border: 3px solid black;
     width: 80px;
     height: 80px;
     margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: white;
+    background-color: orange;
+}
+
+#info{
+    margin-top: 50px;
 }
 
 #theGrid{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+    align-content: center;
 }
 
 #rowNumber{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 38%;
+    width: 100%;
     margin-top: 50px;
+    margin-left: 35%;
 }
 
 #rowNumber div{
@@ -62,7 +100,6 @@ body{
 }
 
 #columnNumber{
-    margin-left: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,6 +122,7 @@ body{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    margin-right: 10%;
 }
 
 .gridRows{
@@ -107,33 +145,42 @@ body{
     background-color: white;
 }
 
-#redo, #music{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-    color: white;
-    background-color: cadetblue;
-}
-
 .tree{
     color: white;
-    background-color: green;
+    background-color: forestgreen;
 }
 
 .tent{
     font-size: 2.5em;
     color: orange;
-    background-color: green;
+    background-color: forestgreen;
 }
 
 .grass{
-    background-color: green;
+    background-color: forestgreen;
 }
 
 i{
     pointer-events: none;
 }
 
+#endPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30vh 0;
+    padding: 15% 0;
+    background-color: forestgreen;
+    z-index: 2;
+    width: 100%;
+}
 
+h2{
+    font-size: 3em;
+    margin-right: 150px;
+    color: white;
+}
 
+.grey{
+    color: grey;
+}
