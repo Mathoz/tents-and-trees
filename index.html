@@ -11,27 +11,33 @@
 </head>
 <body>
     <div id="title">
-        <h1 id="tents">Tents</h1>
+        <div id="titleTent">
+            <i class="fas fa-campground"></i>
+            <h1 id="tents">Tents</h1>
+        </div>
         <h1 id="and">&</h1>
-        <h1 id="trees">Trees</h1>
+        <div id="titleTree">
+            <i class="fas fa-tree"></i>
+            <h1 id="trees">Trees</h1>
+        </div>
     </div>
     <div id="page">
         <section id="theGrid">
             <div id="rowNumber">
-                <div id="rowNumber_1">2</div>
-                <div id="rowNumber_2">0</div>
-                <div id="rowNumber_3">1</div>
-                <div id="rowNumber_4">1</div>
-                <div id="rowNumber_5">1</div>
-                <div id="rowNumber_6">2</div>
+                <div class="rowNumber">2</div>
+                <div class="rowNumber">0</div>
+                <div class="rowNumber">1</div>
+                <div class="rowNumber">1</div>
+                <div class="rowNumber">1</div>
+                <div class="rowNumber">2</div>
             </div>
             <div id="columnNumber">
-                <div id="columnNumber_1">1</div>
-                <div id="columnNumber_2">0</div>
-                <div id="columnNumber_3">3</div>
-                <div id="columnNumber_4">0</div>
-                <div id="columnNumber_5">1</div>
-                <div id="columnNumber_6">2</div>
+                <div class="columnNumber">1</div>
+                <div class="columnNumber">0</div>
+                <div class="columnNumber">3</div>
+                <div class="columnNumber">0</div>
+                <div class="columnNumber">1</div>
+                <div class="columnNumber">2</div>
             </div>
             <div id="grid">
                 <div class="gridRows">
@@ -86,12 +92,12 @@
         </section>
         <section id="option">
             <button id="info"><i class="fas fa-info"></i></button>
-            <button id="musicOn" class="on"><i class="fas fa-volume-up"></i></button>
+            <button id="musicOn" class="off"><i class="fas fa-volume-mute"></i></button>
             <button id="redo"><i class="fas fa-redo"></i></i></button>
-            <p>Trees and Tents is a game where the player has to complete a grid by placing tents and grass. Trees are present on the grid and the player must assign each tree a tent. The tent must be on an adjacent square, but not diagonally. Finally, the player must respect the number of tents that must be included in the rows and columns of the grid. The number around the grid are there to help you out!<br> <b> Warning: </b> tents must not be next to each other or diagonally to another tent. Have fun! :)</p>
+            <p class="invisible">Tents and Trees is a game where the player has to complete a grid by placing tents and grass. Trees are present on the grid and the player must assign each tree a tent. The tent must be on an adjacent square, but not diagonally. Finally, the player must respect the number of tents that must be included in the rows and columns of the grid. The number around the grid are there to help you out!<br> <b> Warning: </b> tents must not be next to each other or diagonally to another tent. Have fun! :)</p>
         </section>
     </div>
-    <div id="endPage">
+    <div id="endPage" class="invisible">
         <h2>Congrats! <br> You won!</h2>
         <button id="redo_endGame"><i class="fas fa-redo"></i></button>
     </div>
