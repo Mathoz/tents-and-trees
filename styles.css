@@ -219,6 +219,7 @@ h1{
     color: orange;
     background-color: forestgreen;
     text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+    /* transition: scale(2, 2); */
 }
 
 .grass{
