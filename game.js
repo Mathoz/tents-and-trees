@@ -20,9 +20,9 @@ const click = (event) => {
     if (event.target.classList.contains("tree")){return}
 
     else if (event.target.classList.contains("grass")){
-        event.target.classList.remove("grass");
         event.target.classList.add("tent");
         event.target.innerHTML = `<i class="fas fa-campground"></i>`
+        event.target.classList.remove("grass");
     }
     else if (event.target.classList.contains("tent")){
         event.target.classList.remove("tent");
@@ -99,7 +99,7 @@ const click = (event) => {
 bttns.forEach(bttn => bttn.onclick = click)
 
 function endGame(){
-    if(document.querySelectorAll(".trueTent.tent").length === 7){return true}
+    if(document.querySelectorAll(".trueTent.tent").length === 7 && document.querySelectorAll(".tent").length === 7){return true}
     else{return false}
 }
 
@@ -178,3 +178,6 @@ redoBttn.onclick = reDo
 
 // REDO ENDGAME
 document.getElementById("redo_endGame").onclick = reDo
+
+// NEXT BUTTON
+// let newUrl = "./middle.html"
