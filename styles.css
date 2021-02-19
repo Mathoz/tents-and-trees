@@ -37,6 +37,7 @@ body{
     background-color: white;
     border-radius: 50% 20% / 20% 40%;
     padding: 2% 2%;
+    box-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #titleTent{
